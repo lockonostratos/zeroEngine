@@ -15,6 +15,8 @@
     "koa-stylus": "",
     "koa-livereload": "",
     "co-views": "",
-    "jade": ""
+    "jade": "",
+    "mongoose": "",
+    "socket.io": ""
   }
 }
