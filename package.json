@@ -18,5 +18,8 @@
     "jade": "",
     "mongoose": "",
     "socket.io": ""
+  },
+  "devDependencies": {
+    "gulp": "^3.8.9"
   }
 }
