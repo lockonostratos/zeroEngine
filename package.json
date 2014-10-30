@@ -6,7 +6,7 @@
   "author": "Cloud Le",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --harmony app.js"
+    "start": "gulp launch"
   },
   "dependencies": {
     "koa": "",
@@ -20,6 +20,12 @@
     "socket.io": ""
   },
   "devDependencies": {
-    "gulp": "^3.8.9"
+    "gulp": "^3.8.9",
+    "browser-sync": "",
+    "gulp-nodemon": "",
+    "gulp-coffee": "",
+    "gulp-util": "",
+    "gulp-jshint": ""
+
   }
 }

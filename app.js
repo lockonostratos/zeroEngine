@@ -34,4 +34,7 @@ io.on('connection', function(socket){
     });
 });
 
+var gutil = require("gulp-util");
+gutil.log(gutil.colors.magenta('Engine is ready!'));
 server.listen(3000);
+
