@@ -14,14 +14,14 @@ jQuery(function($){
     socket.on("new message", function(data){
         $conversations.append(data.name + ": " + data.message + "<br />")
     });
+
+    window.injectCss = function() {
+        $("link[type='css']").each(function() {
+            newVersion = $(this).attr("href") + "?id=" + new Date().getMilliseconds()
+            $(this).attr("href", newVersion);
+            console.log(newVersion);
+        });
+    };
+
+    $("[name='refreshCss']").on('click', injectCss);
 });
-
-function injectCss(name) {
-    var link = document.createElement("link");
-    link.href = "/styles/"+name+".css";
-    link.type = "text/css";
-    link.rel = "stylesheet";
-    document.getElementsByTagName("head")[0].appendChild(link);
-
-    //document.querySelector("[rel='stylesheet']").remove()
-}

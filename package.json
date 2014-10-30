@@ -17,7 +17,8 @@
     "co-views": "",
     "jade": "",
     "mongoose": "",
-    "socket.io": ""
+    "socket.io": "",
+    "node-watch": ""
   },
   "devDependencies": {
     "gulp": "^3.8.9",
@@ -26,6 +27,5 @@
     "gulp-coffee": "",
     "gulp-util": "",
     "gulp-jshint": ""
-
   }
 }
