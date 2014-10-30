@@ -15,3 +15,13 @@ jQuery(function($){
         $conversations.append(data.name + ": " + data.message + "<br />")
     });
 });
+
+function injectCss(name) {
+    var link = document.createElement("link");
+    link.href = "/styles/"+name+".css";
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    document.getElementsByTagName("head")[0].appendChild(link);
+
+    //document.querySelector("[rel='stylesheet']").remove()
+}
