@@ -5,6 +5,15 @@ jQuery(function($){
     var $messageBox = $('#message')
     var $conversations = $("#conversations");
 
+    ko.components.register('my-component', {
+        template: "<p>Enter text here: <input data-bind='value: name'/><p data-bind='text: name().toUpperCase()'></p></p>",
+        viewModel: function() {
+            this.name = ko.observable('something')
+        }
+    });
+
+    ko.applyBindings();
+
     $messageForm.submit(function(e){
         e.preventDefault();
         socket.emit('send message', {name: $alias.val(), message: $messageBox.val()});

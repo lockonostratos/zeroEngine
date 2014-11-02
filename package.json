@@ -26,6 +26,11 @@
     "gulp-nodemon": "",
     "gulp-coffee": "",
     "gulp-util": "",
-    "gulp-jshint": ""
+    "gulp-jshint": "",
+    "gulp-replace": "",
+    "gulp-rename": "",
+    "gulp-concat": "",
+    "event-stream": "",
+    "gulp-clean": ""
   }
 }

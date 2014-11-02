@@ -5,6 +5,5 @@ html
         link(rel='stylesheet' type="css" href='/styles/main.css')
     body
         block content
-        script(src="/scripts/jquery-2.1.1.js")
-        script(src="/scripts/socket.io.js")
-        script(src="/scripts/messenger.js")
+        //script(src="scripts/require.config.js")
+        script(data-main="scripts/startup" src="bower-modules/requirejs/require.js")
