@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: "./scripts",
+    baseUrl: "./bundle",
     paths: {
         "bootstrap":            "../bower-modules/components-bootstrap/js/bootstrap.min",
         "crossroads":           "../bower-modules/crossroads/dist/crossroads.min",
